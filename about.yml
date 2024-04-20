@@ -1,0 +1,11 @@
+name: Vladimir Krasnogorov
+job: QA Engineer
+level: junior
+email: krasnogorov95@gmail.com
+description: |
+  description
+skills: # Список навыков в виде списка, можете написать сюда что-то свое
+  - Функциональное тестирование
+  - Написание багрепортов
+  - bash
+  - Английский язык B2
