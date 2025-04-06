@@ -1,0 +1,68 @@
+---
+- summary: |
+    Открытие карточки товара
+  status: pass
+  
+- summary: |
+    Добавление товара в корзину
+  status: pass
+
+- summary: |
+    Оформление заказа
+  status: fail
+
+- summary: |
+    Удаление товара из корзины
+  status: pass
+
+- summary: |
+    Полная очистка корзины
+  status: pass
+
+- summary: |
+    Фильтрация товаров по категории
+  status: pass
+
+- summary: |
+    Фильтрация товаров по цене
+  status: pass
+
+- summary: |
+    Фильтрация товаров по ключевому слову в поиске
+  status: pass
+
+- summary: |
+    Фильтрация товаров по бренду
+  status: pass
+
+- summary: |
+    Continue shopping перенаправляет в каталог
+  status: pass
+
+- summary: |
+    Проверка фильтра In Stock
+  status: fail
+
+- summary: |
+    Корзина хранится в сессионных куках
+  status: pass
+  
+- summary: |
+    Отображение иконок языков в языковом меню
+  status: fail
+
+- summary: |
+    Отображение количества товаров в корзине на кнопке Cart
+  status: pass
+
+- summary: |
+    Отображение суммы стоимости всей корзины
+  status: pass
+
+- summary: |
+    Отображение суммы стоимости товара в корзине для количества больше 1
+  status: pass
+
+- summary: |
+    Фильтрация товаров по цене использует цену со скидкой
+  status: fail
