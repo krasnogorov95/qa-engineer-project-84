@@ -1,0 +1,94 @@
+---
+test-cases:
+  - summary: |
+      Открытие карточки товара
+    status: pass
+  
+  - summary: |
+      Добавление товара в корзину
+    status: pass
+
+  - summary: |
+      Оформление заказа
+    status: fail
+
+  - summary: |
+      Удаление товара из корзины
+    status: pass
+
+  - summary: |
+      Полная очистка корзины
+    status: pass
+
+  - summary: |
+      Фильтрация товаров по категории
+    status: pass
+
+  - summary: |
+      Фильтрация товаров по цене
+    status: pass
+
+  - summary: |
+      Фильтрация товаров по ключевому слову в поиске
+    status: pass
+  
+  - summary: |
+      Фильтрация товаров по бренду
+    status: pass
+
+  - summary: |
+      Continue shopping перенаправляет в каталог
+    status: pass
+
+  - summary: |
+      Проверка фильтра In Stock
+    status: pass
+
+  - summary: |
+      Корзина хранится в сессионных куках
+    status: pass
+  
+  - summary: |
+      Отображение иконок языков в языковом меню
+    status: fail
+
+  - summary: |
+      Отображение количества товаров в корзине на кнопке Cart
+    status: pass
+  
+  - summary: |
+      Отображение суммы стоимости всей корзины
+    status: pass
+
+  - summary: |
+      Отображение суммы стоимости товара в корзине для количества больше 1
+    status: fail
+
+  - summary: |
+      Фильтрация товаров по цене использует цену со скидкой
+    status: fail
+
+bugreports:
+  - summary: |
+      Выводится весь каталог если в результате фильтрации не найдены подходящие товары
+    environment: |
+      Safari 18.1.1
+      ОС MacOs Ventura 13.7.1
+    steps-to-reproduce: |
+      1. Ввести в поиск по ключевому слову название товара, которого нет в каталоге
+    expected-result: |
+      Предупреждение о нулевом результате фильтрации
+    actual-result: |
+      Отображается весь каталог
+
+  - summary: |
+      При фильтрации пропадают кнопки перехода по страницам каталога
+    environment: |
+      Safari 18.1.1
+      ОС MacOs Ventura 13.7.1
+    steps-to-reproduce: |
+      1. Перейти на следующую страницу каталога
+    expected-result: |
+      Кнопки Previous и Next отображаются
+    actual-result: |
+      Отображается только кнопка Previous
